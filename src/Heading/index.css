@@ -1,0 +1,44 @@
+nav {
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+}
+
+header li {
+  display: inline-block;
+}
+
+header li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media all and (max-width: 600px) {
+  header li {
+    font-size: 1rem;
+    padding: 30px 10px 20px 10px;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 900px) {
+  header li {
+    font-size: 1rem;
+    padding: 40px 20px 20px 20px;
+  }
+}
+
+@media all and (min-width: 900px) and (max-width: 1200px) {
+  header li {
+    font-size: 1.2rem;
+    padding: 40px 20px 20px 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  header li {
+    font-size: 1.6rem;
+    padding: 40px;
+  }
+}
