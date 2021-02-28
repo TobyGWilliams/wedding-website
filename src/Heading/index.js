@@ -18,6 +18,9 @@ export default () => (
       <li>
         <a href="/#giftList">Gift List</a>
       </li>
+      <li>
+        <a href="/#travel">Travel</a>
+      </li>
     </nav>
   </header>
 );
