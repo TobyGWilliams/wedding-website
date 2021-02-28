@@ -36,28 +36,32 @@ function App() {
               loading="lazy"
             ></iframe>
           </SectionHeading>
-          <SectionHeading name="RSVP" id="rsvp">
+          {/* <SectionHeading name="RSVP" id="rsvp">
             <p class="horizontal-center paragraph-spacer">
               Please let us know if you will be able to join us and if there is
               anything we need to know.
             </p>
+            <p>Form does not work!</p>
             <Form></Form>
-          </SectionHeading>
+          </SectionHeading> */}
           <SectionHeading name="Travel" id="travel">
             <p class="horizontal-center paragraph-spacer">
               The venue is a short 3 minute ride from Twyford Rail Station. The
               route from the station to the venue is theoretically walkable as
-              the roads do have footpaths, however, 20 minutes walk, all dressed up, in the middle of July might be a little sticky.
+              the roads do have footpaths, however, 20 minutes walk, all dressed
+              up, in the middle of July might be a little sticky.
             </p>
             <p class="horizontal-center paragraph-spacer">
-              Reading town center is 7.5 miles (20 minutes by car) away and may provide easier travel/accomodation options.
+              Reading town center is 7.5 miles (20 minutes by car) away and may
+              provide easier travel/accomodation options.
             </p>
             <p class="horizontal-center paragraph-spacer">
               There is spacing for parking onsite, however all vehicles must be
               collected by 9.00 am the next morning.
             </p>
             <p class="horizontal-center paragraph-spacer">
-              Further travel information from the venue can be found here:{" "}
+              Further travel information from the venue can be found here:
+              <br />
               <a
                 href="https://stanlakeparkweddings.com/contact/"
                 target="_blank"
@@ -73,7 +77,8 @@ function App() {
             </p>
             <p class="horizontal-center paragraph-spacer">
               Information from Stanlake Park on places to stay can be found
-              here:{" "}
+              here:
+              <br />
               <a
                 href="https://stanlakeparkweddings.com/where-to-stay/"
                 target="_blank"
@@ -89,11 +94,12 @@ function App() {
               experience to our vacation.
             </p>
             <p class="horizontal-center paragraph-spacer">
-              We have also have a option with{" "}
+              We have also have a option with Pressola for plates, plants and
+              pepper grinders:
+              <br />
               <a href="https://prezola.com/wishlists/10228081/" target="_blank">
                 Pressola
               </a>{" "}
-              for plates, plants and pepper grinders.
             </p>
           </SectionHeading>
         </div>

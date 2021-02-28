@@ -24,5 +24,6 @@
 
 @media all and (min-width: 1200px) {
   .section-heading-wrapper {
+    width: 750px;
   }
 }
