@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Row from "./Row";
 
 export default () => {
-  const [formData, setFormData] = useState([{}]);
+  const [formData, setFormData] = useState([{}, {}]);
 
   return (
     <div class="horizontal-center">
@@ -28,8 +28,7 @@ export default () => {
             }}
           />
         ))}
-        <div className="row">
-          <div className="spacer"></div>
+        <div className="row align-right">
           <button
             type="button"
             onClick={(event) => {
@@ -41,6 +40,9 @@ export default () => {
           </button>
         </div>
         <div className="row">
+          <p className="horizontal-center paragraph-spacer">
+            Thank you very much for getting back to us!
+          </p>
           <button
             className="horizontal-center"
             type="button"

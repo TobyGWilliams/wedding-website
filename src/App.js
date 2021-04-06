@@ -22,12 +22,14 @@ function App() {
               <a
                 href="https://g.page/stanlake-park-vineyard-weddings?share"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Stanlake Park
               </a>{" "}
               in Twyford, Berkshire, RG10 0BN.
             </p>
             <iframe
+              title="Map to Venue"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6135.652108649984!2d-0.8504099722238062!3d51.47050378372535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876871437edeb9f%3A0x3b221de71ac605f0!2sStanlake%20Park%20Vineyard%20and%20Barn%20Weddings!5e1!3m2!1sen!2suk!4v1614537413432!5m2!1sen!2suk"
               width="400"
               height="300"
@@ -65,6 +67,7 @@ function App() {
               <a
                 href="https://stanlakeparkweddings.com/contact/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 https://stanlakeparkweddings.com/contact/
               </a>
@@ -82,6 +85,7 @@ function App() {
               <a
                 href="https://stanlakeparkweddings.com/where-to-stay/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 https://stanlakeparkweddings.com/where-to-stay/
               </a>
@@ -97,7 +101,11 @@ function App() {
               We have also have a option with Pressola for plates, plants and
               pepper grinders:
               <br />
-              <a href="https://prezola.com/wishlists/10228081/" target="_blank">
+              <a
+                href="https://prezola.com/wishlists/10228081/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Pressola
               </a>{" "}
             </p>
