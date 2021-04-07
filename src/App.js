@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div class="container">
+    <div className="container">
       <div className="border border-container"></div>
       <div className="background-image"></div>
       <div className="column border-container">
@@ -38,14 +38,13 @@ function App() {
               loading="lazy"
             ></iframe>
           </SectionHeading>
-          {/* <SectionHeading name="RSVP" id="rsvp">
+          <SectionHeading name="RSVP" id="rsvp">
             <p class="horizontal-center paragraph-spacer">
               Please let us know if you will be able to join us and if there is
               anything we need to know.
             </p>
-            <p>Form does not work!</p>
-            <Form></Form>
-          </SectionHeading> */}
+            <Form />
+          </SectionHeading>
           <SectionHeading name="Travel" id="travel">
             <p class="horizontal-center paragraph-spacer">
               The venue is a short 3 minute ride from Twyford Rail Station. The

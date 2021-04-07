@@ -93,19 +93,17 @@ body {
 .scrollable {
   overflow: scroll;
   scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
 }
 
 .paragraph-spacer {
   padding-bottom: 20px;
-}s
+}
+s
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollable::-webkit-scrollbar {
   display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollable {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }

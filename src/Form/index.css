@@ -2,6 +2,19 @@
   padding-bottom: 1em;
 }
 
+.tickIcon {
+  height: 80px;
+  width: 80px;
+}
+
+.error-message {
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+  margin: 4px 0 0 20px;
+  text-align: left;
+}
+
 .spacer {
   flex-grow: 1;
 }
