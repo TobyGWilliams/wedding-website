@@ -18,7 +18,7 @@ function App() {
           <Title />
           <SectionHeading name="Where" id="where">
             <p className="horizontal-center paragraph-spacer">
-              Our weding will take place on the 23rd July 2021 at{" "}
+              Our wedding will take place on the 23rd July 2021 at{" "}
               <a
                 href="https://g.page/stanlake-park-vineyard-weddings?share"
                 target="_blank"
@@ -97,25 +97,25 @@ function App() {
               </a>
             </p>
             <p className="horizontal-center paragraph-spacer">
-              We have a group reservation with{" "}
+              We have a selection of rooms at a reduced price set aside until
+              30/06/21 in{" "}
               <a href="https://all.accor.com/hotel/5432/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps">
-                Novotel Reading.
-              </a>
-              <br />
-              The prices for the group reservation are:
+                Novotel in Reading.
+              </a>{" "}
+              The prices are as follows:
               <br />
               <br />
               single @ 2 nights - £110
               <br />
               double @ 2 nights - £120
               <br />
-              triple @ 2 nights - £140
+              family @ 2 nights - £140
               <br />
               single @ 1 night - £70
               <br />
               double @ 1 night - £75
               <br />
-              triple @ 1 night - £80
+              family @ 1 night - £80
               <br />
               <br />
               To book at these prices, please email H5432-SB@accor.com or call
@@ -124,13 +124,8 @@ function App() {
           </SectionHeading>
           <SectionHeading name="Gift List" id="giftList">
             <p className="horizontal-center paragraph-spacer">
-              In the unlikely event that we will be able to go on our honeymoon,
-              we will have an option through our travel agent to add an
-              experience to our vacation.
-            </p>
-            <p className="horizontal-center paragraph-spacer">
-              We have also have a option with Prezola for plates, plants and
-              pepper grinders:
+              We a Prezola gift list for plates, plants and
+              pepper grinders or to add experiences to our honeymoon:
               <br />
               <a
                 href="https://prezola.com/wishlists/10228081/"
