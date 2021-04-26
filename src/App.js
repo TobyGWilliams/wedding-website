@@ -124,7 +124,7 @@ function App() {
           </SectionHeading>
           <SectionHeading name="Gift List" id="giftList">
             <p className="horizontal-center paragraph-spacer">
-              We a Prezola gift list for plates, plants and
+              We have a Prezola gift list for plates, plants and
               pepper grinders or to add experiences to our honeymoon:
               <br />
               <a
