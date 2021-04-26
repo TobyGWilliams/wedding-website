@@ -38,13 +38,6 @@ function App() {
               loading="lazy"
             ></iframe>
           </SectionHeading>
-          <SectionHeading name="RSVP" id="rsvp">
-            <p className="horizontal-center paragraph-spacer">
-              Please let us know if you will be able to join us and if there is
-              anything we need to know.
-            </p>
-            <Form />
-          </SectionHeading>
           <SectionHeading name="Travel" id="travel">
             <p className="horizontal-center paragraph-spacer">
               The venue is a short 3 minute ride from Twyford Rail Station. The
@@ -72,6 +65,20 @@ function App() {
               </a>
             </p>
           </SectionHeading>
+          <SectionHeading name="RSVP" id="rsvp">
+            <p className="horizontal-center paragraph-spacer">
+              Please let us know if you will be able to join us and if there is
+              anything we need to know.
+              <br />
+              <br />
+              <i>
+                Please add additional entries for each party member, including
+                children
+              </i>
+            </p>
+            <Form />
+          </SectionHeading>
+
           <SectionHeading name="Places To Stay" id="hotels">
             <p className="horizontal-center paragraph-spacer">
               If you would like to stay over for the big day, then we suggest
@@ -89,6 +96,31 @@ function App() {
                 https://stanlakeparkweddings.com/where-to-stay/
               </a>
             </p>
+            <p className="horizontal-center paragraph-spacer">
+              We have a group reservation with{" "}
+              <a href="https://all.accor.com/hotel/5432/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps">
+                Novotel Reading.
+              </a>
+              <br />
+              The prices for the group reservation are:
+              <br />
+              <br />
+              single @ 2 nights - £110
+              <br />
+              double @ 2 nights - £120
+              <br />
+              triple @ 2 nights - £140
+              <br />
+              single @ 1 night - £70
+              <br />
+              double @ 1 night - £75
+              <br />
+              triple @ 1 night - £80
+              <br />
+              <br />
+              To book at these prices, please email H5432-SB@accor.com or call
+              0118 952 2600 quoting "Erynn and Toby’s Wedding”
+            </p>
           </SectionHeading>
           <SectionHeading name="Gift List" id="giftList">
             <p className="horizontal-center paragraph-spacer">
@@ -97,7 +129,7 @@ function App() {
               experience to our vacation.
             </p>
             <p className="horizontal-center paragraph-spacer">
-              We have also have a option with Pressola for plates, plants and
+              We have also have a option with Prezola for plates, plants and
               pepper grinders:
               <br />
               <a

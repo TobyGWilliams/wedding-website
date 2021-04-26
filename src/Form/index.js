@@ -36,7 +36,6 @@ const Form = () => {
   } = useForm({ defaultValues });
 
   const onSubmit = async (data) => {
-    console.log("SUBMIT", data);
     try {
       await fetch(
         "https://api.erynnandtobygettingmarried.co.uk/wedding-reservations",
