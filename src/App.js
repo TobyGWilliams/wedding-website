@@ -17,7 +17,7 @@ function App() {
         <div className="scrollable">
           <Title />
           <SectionHeading name="Where" id="where">
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               Our weding will take place on the 23rd July 2021 at{" "}
               <a
                 href="https://g.page/stanlake-park-vineyard-weddings?share"
@@ -34,33 +34,33 @@ function App() {
               width="400"
               height="300"
               style={{ border: 0, margin: "0 auto" }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
             ></iframe>
           </SectionHeading>
           <SectionHeading name="RSVP" id="rsvp">
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               Please let us know if you will be able to join us and if there is
               anything we need to know.
             </p>
             <Form />
           </SectionHeading>
           <SectionHeading name="Travel" id="travel">
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               The venue is a short 3 minute ride from Twyford Rail Station. The
               route from the station to the venue is theoretically walkable as
               the roads do have footpaths, however, 20 minutes walk, all dressed
               up, in the middle of July might be a little sticky.
             </p>
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               Reading town center is 7.5 miles (20 minutes by car) away and may
               provide easier travel/accomodation options.
             </p>
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               There is spacing for parking onsite, however all vehicles must be
               collected by 9.00 am the next morning.
             </p>
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               Further travel information from the venue can be found here:
               <br />
               <a
@@ -73,11 +73,11 @@ function App() {
             </p>
           </SectionHeading>
           <SectionHeading name="Places To Stay" id="hotels">
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               If you would like to stay over for the big day, then we suggest
               boking early as a lot of weddings are being squeezed into 2021!
             </p>
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               Information from Stanlake Park on places to stay can be found
               here:
               <br />
@@ -91,12 +91,12 @@ function App() {
             </p>
           </SectionHeading>
           <SectionHeading name="Gift List" id="giftList">
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               In the unlikely event that we will be able to go on our honeymoon,
               we will have an option through our travel agent to add an
               experience to our vacation.
             </p>
-            <p class="horizontal-center paragraph-spacer">
+            <p className="horizontal-center paragraph-spacer">
               We have also have a option with Pressola for plates, plants and
               pepper grinders:
               <br />

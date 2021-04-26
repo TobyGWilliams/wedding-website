@@ -2,7 +2,7 @@ import React from "react";
 
 const Tick = () => (
   <svg
-    class="tickIcon"
+    className="tickIcon"
     focusable="false"
     viewBox="0 0 24 24"
     aria-hidden="true"

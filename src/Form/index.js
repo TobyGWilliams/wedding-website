@@ -12,7 +12,7 @@ const REQUIRED = {
 
 const Input = forwardRef(({ placeholder, error, ...rest }, ref) => (
   <div>
-    <input placeholder={placeholder} ref={ref} {...rest} />
+    <input placeholder={placeholder} ref={ref} {...rest} data-lpignore="true" />
     {error && (
       <p className="error-message">
         Please fill out your {placeholder.toLowerCase()}
@@ -30,22 +30,36 @@ const Form = () => {
     register,
     handleSubmit,
     control,
-    formState: { isSubmitSuccessful },
-    formState: { errors },
+    setError,
+    clearErrors,
+    formState: { isSubmitSuccessful, errors, isSubmitted },
   } = useForm({ defaultValues });
 
-  const onSubmit = async (data) => await fetch( 'https://api.erynnandtobygettingmarried.co.uk/wedding-reservations',  {
-    method: 'POST',
-    mode: 'cors', 
-    cache: 'no-cache',
-    credentials: 'same-origin',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    redirect: 'follow',
-    referrerPolicy: 'no-referrer',
-    body: JSON.stringify(data)
-  });
+  const onSubmit = async (data) => {
+    console.log("SUBMIT", data);
+    try {
+      await fetch(
+        "https://api.erynnandtobygettingmarried.co.uk/wedding-reservations",
+        {
+          method: "POST",
+          mode: "cors",
+          cache: "no-cache",
+          credentials: "same-origin",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          redirect: "follow",
+          referrerPolicy: "no-referrer",
+          body: JSON.stringify(data),
+        }
+      );
+    } catch (err) {
+      console.error(err);
+      setError("submit", {
+        type: "manual",
+      });
+    }
+  };
 
   const { fields, append, remove } = useFieldArray({
     control,
@@ -60,8 +74,10 @@ const Form = () => {
       </div>
     );
 
+  const submitError = isSubmitted && !isSubmitSuccessful;
+
   return (
-    <div class="horizontal-center">
+    <div className="horizontal-center">
       <form onSubmit={handleSubmit(onSubmit)}>
         {fields.map((field, index) => {
           const error = errors?.attendees?.[index];
@@ -90,6 +106,7 @@ const Form = () => {
                   name="availability"
                   id="availability"
                   placeholder="please select"
+                  data-lpignore="true"
                   {...register(`attendees.${index}.availability`, REQUIRED)}
                 >
                   <option value="day">Looking forwards to it!</option>
@@ -103,7 +120,11 @@ const Form = () => {
                 )}
               </div>
               <div className="row align-right">
-                <button type="button" onClick={remove}>
+                <button
+                  type="button"
+                  onClick={() => remove()}
+                  data-lpignore="true"
+                >
                   Remove
                 </button>
               </div>
@@ -111,17 +132,39 @@ const Form = () => {
           );
         })}
         <div className="row align-right">
-          <button type="button" onClick={append}>
+          <button type="button" onClick={() => append({})} data-lpignore="true">
             Add
           </button>
         </div>
         <div className="row">
-          <p className="horizontal-center paragraph-spacer">
-            Thank you very much for getting back to us!
-          </p>
-          <button className="horizontal-center" type="submit">
-            Submit
-          </button>
+          {!submitError && (
+            <button
+              className="horizontal-center"
+              type="submit"
+              data-lpignore="true"
+            >
+              Submit
+            </button>
+          )}
+          {submitError && (
+            <>
+              <button
+                className="horizontal-center"
+                type="button"
+                onClick={() => {
+                  clearErrors("submit");
+                  handleSubmit(onSubmit)();
+                }}
+                data-lpignore="true"
+              >
+                Submit
+              </button>
+              <p className="error-message">
+                Sorry, we were unable to capture your response. Either let me
+                know directly or try again.
+              </p>
+            </>
+          )}
         </div>
       </form>
     </div>
