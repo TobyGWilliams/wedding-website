@@ -5,18 +5,12 @@ h1 {
   padding-top: 60px;
 }
 
-h1 .firstName {
-  font-size: 2em;
+h1 {
+  font-size: 5em;
 }
 
-h1 .secondName {
+h2 {
   font-size: 1em;
-}
-
-h1 .ampersand {
-  font-size: 2em;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 h2 {

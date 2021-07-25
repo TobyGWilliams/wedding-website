@@ -4,15 +4,10 @@ import "./index.css";
 
 export default () => (
   <div className="title-wrapper">
-    <h1>
-      <div className="firstName">Erynn</div>
-      <div className="secondName">Oliver</div>
-      <div className="ampersand">{"&"}</div>
-      <div className="firstName">Toby</div>
-      <div className="secondName">Williams</div>
-    </h1>
+    <h1>Thank you!</h1>
     <h2>
-      23rd July 2021 <br /> Twyford, Berkshire
+      We had a brilliant day and <br />
+      are super grateful to everybody that joined us.
     </h2>
   </div>
 );

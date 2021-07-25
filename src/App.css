@@ -86,16 +86,12 @@ body {
 }
 
 .horizontal-center {
-  margin: 0 auto;
+  width:100%;
   text-align: center;
 }
 
 .scrollable {
-  overflow: scroll;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow-x: hidden;
+  margin: auto;
 }
 
 .paragraph-spacer {
